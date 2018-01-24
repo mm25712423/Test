@@ -1,0 +1,15 @@
+Compile GPU code with:
+	nvcc myGPU.cu -o gpu
+Compile CPU code with:
+	nvcc cpu.cu -o cpu
+Complie Generater cpde with:
+	nvcc gen.cu -o gen
+
+Step1 : Generate a matrix, matrix size should between 10~10000
+	1. cmd: ./gen
+	2. input your matrix size
+	3. check your matrix: cat MATRIX_SIZE_YOU_SET.txt
+Step2 : Run with CPU verion
+	cmd: ./cpu MATRIX_SIZE_YOU_SET.txt
+Step3 : Run with GPU version
+	cmd: ./gpu MATRIX_SIZE_YOU_SET.txt
